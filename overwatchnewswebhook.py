@@ -14,7 +14,7 @@ today = datetime.datetime.today()
 currentDate = f'{today.month}/{today.day}/{today.year}'
 
 if currentDate in lastPostDate:
-    webhook = 'https://discordapp.com/api/webhooks/728846977114177537/RY6UugAATpJC8gXaSVCzyxYtVYPXHQaDaeiRcxpxjtxSOMMJ7VdRuv0ARQdG5E1NOE4Q'
+    webhook = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
     webhookContent = f'New patch came out! View it here: <{overwatchURL}>'
     webhook = DiscordWebhook(url=webhook, content=webhookContent)
     response = webhook.execute()
