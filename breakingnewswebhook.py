@@ -4,10 +4,10 @@ from datetime import datetime
 import datetime as dt
 import time
 
-consumerKey = "xzKmPYUndQyF3sW8Yzs7A6Ia4"
-consumerSecret = "bC9DMdqbonyvphhoX0vbNKfKXtyXhyIAZQagugtqUW5R6p0bcz"
-accessToken = "925489542-bK3Kbf62l9ludW3fahrY3sIjHoPKCeA5h0UJR9my"
-accessTokenSecret = "sPDY4prKtPwgg4c63VzXr1d2cRGQFyH2aGxLQLwwM5tBe"
+consumerKey = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+consumerSecret = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+accessToken = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+accessTokenSecret = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 
 auth = tweepy.OAuthHandler(consumerKey, consumerSecret)
 auth.set_access_token(accessToken, accessTokenSecret)
@@ -28,7 +28,7 @@ while True:
     mostRecentTweet = api.user_timeline(username)[0]
     if mostRecentTweet.created_at < endTime and mostRecentTweet.created_at > startTime:
 
-        webhook = 'https://discordapp.com/api/webhooks/692080532250558594/xEMzGLFnmRFtT2cBgUQT-S_Yj2qdXZT0nlPaNVVmffEVgAAXRznjpR-1h6uv_DyUpBCn'
+        webhook = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
         webhookContent = f'https://twitter.com/cnnbrk/status/{mostRecentTweet.id}' #Exception would be here
         webhook = DiscordWebhook(url=webhook, content=webhookContent)
         response = webhook.execute()
