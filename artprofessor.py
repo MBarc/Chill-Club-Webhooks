@@ -181,7 +181,7 @@ reminders = [
     "I said I wanted art, not all *this*! I'll be back in a week for it..."
 ]
 
-webhook = 'https://discordapp.com/api/webhooks/725177156971528243/ulsunB6BNMHwapU5X0F47INHQW2wrIbeRRqn35GgY5v2naP82W9yccjjREyUAV2Z-Mnm'
+webhook = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
 dayOfWeek = numberToDayofWeek(datetime.datetime.today().weekday())
 if dayOfWeek == "Saturday" and (int(datetime.datetime.today().strftime("%V")) % 2 == 0): #if its friday and the week is divisible by 2
 
