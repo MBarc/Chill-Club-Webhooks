@@ -2,10 +2,10 @@ import tweepy
 from discord_webhook import DiscordWebhook
 import datetime as dt
 
-consumerKey = "xzKmPYUndQyF3sW8Yzs7A6Ia4"
-consumerSecret = "bC9DMdqbonyvphhoX0vbNKfKXtyXhyIAZQagugtqUW5R6p0bcz"
-accessToken = "925489542-bK3Kbf62l9ludW3fahrY3sIjHoPKCeA5h0UJR9my"
-accessTokenSecret = "sPDY4prKtPwgg4c63VzXr1d2cRGQFyH2aGxLQLwwM5tBe"
+consumerKey = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+consumerSecret = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+accessToken = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+accessTokenSecret = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 
 auth = tweepy.OAuthHandler(consumerKey, consumerSecret)
 auth.set_access_token(accessToken, accessTokenSecret)
@@ -28,7 +28,7 @@ endTime = dt.datetime.utcnow()
 
 mostRecentTweet = newsTweets[0]
 if mostRecentTweet.created_at < endTime and mostRecentTweet.created_at > startTime:
-    webhook = 'https://discordapp.com/api/webhooks/729548304836329532/UsWX7MPRWk42dF_g234MAt-FozSlvKD0q089pEc35cDm5lSn7FsL85JAG_FeDMXE_ZwC'
+    webhook = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
     webhookContent = f'https://twitter.com/charlieINTEL/status/{mostRecentTweet.id}'  # Exception would be here
     webhook = DiscordWebhook(url=webhook, content=webhookContent)
     response = webhook.execute()
